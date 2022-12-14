@@ -1,0 +1,23 @@
+.home{
+    background: url("../../../assets/images/yoga-background.jpg");
+    background-position: 0 -500px;
+    height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .main{
+        height: 100%;
+        .show{
+            display: flex;
+            flex-flow: row;
+            justify-content: space-evenly;
+            flex: 1 1 1;
+            height: 100%;
+            div{
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,103 @@
+.login-form {
+  display: grid;
+  margin-top: 4rem;
+  justify-content: center;
+  box-sizing: border-box;
+  .form {
+    display: grid;
+    box-shadow: 0 0 30px gray;
+    max-height: 55rem;
+    min-width: 25rem;
+    max-width: 30rem;
+    border-radius: var(--radius);
+    // border-top: 5px solid var(--clr-primary-1);
+    margin-bottom: 10rem;
+
+    h3 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: capitalize;
+      margin-top: 2rem;
+      font-size: 1.5rem;
+      color: var(--clr-grey-1);
+      letter-spacing: var(--spacing);
+    }
+    .form-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+      font-family: cursive;
+      color: var(--clr-primary-1);
+      font-size: 2rem;
+      letter-spacing: var(--spacing);
+    }
+    .form-row {
+      display: grid;
+      grid-template-rows: auto auto;
+      row-gap: 0.5rem;
+      align-items: center;
+      margin-left: 4rem;
+      margin-right: 4rem;
+      margin-top: 1.5rem;
+      color: var(--clr-grey-3);
+      text-transform: capitalize;
+      letter-spacing: var(--spacing);
+      .form-input {
+        padding: 0.5rem;
+        outline: none;
+        border: 2px solid transparent;
+        border-bottom: 2px solid black;
+        border-radius: var(--radius);
+        transition: all 0.5s;
+        &:focus{
+          background-color: var(--clr-grey-10);
+        }
+      }
+    }
+    .form-para {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 2rem 0;
+      letter-spacing: var(--spacing);
+
+      .register-link {
+        margin-left: 0.4rem;
+        letter-spacing: var(--spacing);
+        color: blue;
+      }
+    }
+
+    .btn {
+      background: var(--clr-primary-1);
+      color: var(--clr-white);
+      font-size: 1rem;
+      border-radius: var(--radius);
+      padding: 0.75rem 1rem;
+      cursor: pointer;
+      letter-spacing: var(--spacing);
+      border-color: transparent;
+      text-transform: uppercase;
+      margin-top: 2rem;
+      
+      &:hover{
+        background-color: var(--clr-primary-4);
+        transition: var(--transition);
+      }
+    }
+
+    .form-btn {
+      margin-left: 4rem;
+      margin-right: 4rem;
+      padding: 0.4rem 0.2rem;
+      text-transform: capitalize;
+    }
+
+    // .register-btn {
+    //   margin-bottom: 3rem;
+    // }
+  }
+  
+}

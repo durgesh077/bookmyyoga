@@ -1,0 +1,72 @@
+.ModelEnrollBox{
+    padding-right: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-flow: column;
+    .ModelEnrollImageBox{
+        // padding: 5px;
+        justify-content: center;
+        display: flex;
+        .ModelEnrollImage{
+            display: block;
+            height: 30x;
+            width: 100px;
+            object-fit: cover;
+        }
+    }
+
+    .ModelEnrollMonth{
+        padding: 0px 5px;
+        font-size: large ;
+        font-weight: bolder;
+        .ModelEnrollMonthName{
+            color: green;
+        }
+
+    }
+
+    .ModelEnrollChooseBatchBox{
+        padding: 0px 5px;
+        font-size: large;
+        font-weight: bolder;
+        .ModelEnrollChooseBatch{
+            color:green ; 
+        }
+
+        select{
+            // display: none;
+            outline: none;
+            letter-spacing: 0.1rem;
+        }
+
+    }
+
+    .ModelEnrollCheckBox{
+
+        padding: 5px;
+        padding-top : 10px;
+
+    }
+
+    .ModelEnrollButtonBox{
+        margin-left: auto;
+        margin-right : 10px;
+        padding: 5px;
+        padding-top: 20px;
+
+        button{
+            padding: 0.3rem 1rem;
+            background-color: var(--clr-primary-1);
+            transition: background-color 0.3s;
+            cursor: pointer;
+            color: white;
+            font-weight: bolder;
+            border: none;
+            border-radius: 5px;
+            &:hover{
+                background-color: var(--clr-primary-4);
+            }
+        }
+
+    }
+}

@@ -1,0 +1,50 @@
+.EnrollmentDetails{
+    padding: 100px 10px 100px ;
+    display : flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    .Text,.Row{
+        display: grid;
+        place-items: center;
+        font-weight:500;
+    }
+
+    .Row{
+        font-size: xx-large;
+        justify-content: center;
+        align-content: center;
+        color:whitesmoke;
+    }
+
+    .Text{
+        font-size: xx-large;
+        font-weight: 900;
+        color: whitesmoke;
+        text-decoration: underline;
+        text-shadow:0 0 5px red;
+    }
+
+    .ButtonsWrapper{
+        display: flex;
+        flex: 1 1 1;
+        justify-content: space-around;
+        margin-top: 30px;
+
+        .button{
+            display: inline-block;
+            background-color: var(--clr-primary-1);
+            height: 30px;
+            width: 40%;
+            border-radius: 10px;
+            border:none;
+            font-weight: bold;
+            cursor: pointer;
+            color: white;
+            transition: background-color 0.3s;
+            
+            &:hover{
+                background-color: var(--clr-primary-4);
+            }
+        }
+    }
+}
